@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Welcome to the DP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    background-image: url(park1.jpg));
+	 background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .top_space
+  {
+  margin-top:109px;
+  }
+  h1
+  {
+  color:#E8E4DB;
+ }
+  
+  @media screen and (max-width: 480px) {
+    body {
+        background-image: url({{url_for('static',filename='fa6da8324a24bc47b5ec3e.png')}});
+        height:560px;
+
+    }
+}
+  </style>
+
+</head>
+<script>
+function myStatus() {
+ window.location.href = "http://127.0.0.1:5000/status";
+}
+function myMaps() {
+ window.location.href = "https://www.google.com/maps/place/Vijaya+Nagar,+Bengaluru,+Karnataka,+India/@12.9706101,77.5327425,12z/data=!4m2!3m1!1s0x3bae3dd95efc3ae7:0xc90db791aedd9aad";
+}
+
+</script>
+
+<body>
+<div class="container">
+  <div class="row">
+<div class="text-center">
+  <h1>Welcome to the Dynamic Parking System</h1> 
+  <form class="form-inline">
+   <div class="top_space">
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button type="button" onclick="myStatus()" class="btn btn-danger" >Check Status of Parking</button>
+      </div>
+    </div>
+	<div class="clearfix"></div>
+	<br>
+	<br>
+	<br>
+	  <div class="input-group">
+      <div class="input-group-btn">
+        <button type="button" onclick="myMaps()" class="btn btn-danger" >Check Root</button>
+      </div>
+    </div>
+  </div>
+  </form>
+</div>
+</div>
+</div>
+</body>
+</html>
